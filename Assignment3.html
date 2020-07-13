@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <h3><u>ASSIGNMENT 3:</u></h3>
+        <script>
+            function show(){
+                var x= new Date();
+                 
+                var date=x.getUTCDate();
+                var month=x.getUTCMonth();
+                var year=x.getFullYear();
+                document.getElementById("showing").innerHTML="Current Date :"+"<br>"+"<br>"+" Today is :"+""+date+"/"+month+"/"+year+"<br>"+" Today is :"+""+date+"-"+month+"-"+year;
+                        
+            }
+                </script>
+    </head>
+    <body>
+            <h3><b><u>Question:</u></b></h3>
+            <p>Write a JavaScript program to get the current date.<br>
+                <br>
+            <h3><b><u>Answer:</u></b></h3><br>
+            To show current date=>
+        <button onclick="show()">Click Here</button>
+        <br>
+        <br></p>
+        <p id="showing"></p>
+    </body>
+</html>

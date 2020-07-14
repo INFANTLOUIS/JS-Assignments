@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h3><u>ASSIGNMENT 5:</u></h3>
+</head>
+<body>
+    <h3><b><u>Question:</u></b></h3>
+    Write the difference between var, Let and const with code examples.<br>
+        <br>
+<h3><b><u>Answer:</u></b></h3><br>
+<b>var declarations are globally scoped or function scoped while let and const are block scoped.</b> 
+<br>
+<br>
+
+
+<b>var variables can be updated and re-declared within its scope;</b> <br>
+<h4><u>Example:</u></h4>
+
+var greeter = "hey hi";<br>
+    var times = 4;<br>
+<br>
+    if (times > 3) {<br>
+        var greeter = "say Hello instead";<br> 
+    }<br>
+    <br>
+    console.log(greeter) // "say Hello instead"<br><br>
+
+
+
+    <b>let variables can be updated but not re-declared;</b> <br>
+<h4><u>Example:</u></h4>
+
+let show = "say Hi";<br>
+    if (true) {<br>
+        let show = "say Hello instead";<br>
+        console.log(show); // "say Hello instead"<br>
+    }<br>
+    console.log(show); // "say Hi"<br>
+    <br>
+
+
+
+<b>const variables can neither be updated nor re-declared.</b>
+<h4><u>Example:</u></h4>
+
+const greeting = "say Hi";<br>
+    greeting = "say Hello instead";// error: Assignment to constant variable.<br>
+    <hr>
+    <center>x-----The End-----x</center>
+</body>
+</html>

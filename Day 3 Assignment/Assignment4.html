@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h3><u>ASSIGNMENT 4:</u></h3>
+</head>
+<body>
+
+    <h3><b><u>Question:</u></b></h3>
+            Explore and explain the various methods in console function
+                explain them<br>
+                <br>
+            <h3><b><u>Answer:</u></b></h3><br>
+            The console object with several different methods:
+            
+            <ul style="list-style-type:disc">
+                <li>log()</li>
+            <li>error()</li>
+            <li>warn()</li>
+            <li>clear()</li>
+            <li>time() and timeEnd()</li>
+            <li>table()</li>
+            <li>count()</li>
+            <li>group() and groupEnd()</li>
+            <li>custom console logs</li>
+            </ul>
+
+    <h3><u>console.log()</u></h3>
+&nbsp&nbsp&nbsp&nbsp&nbspMainly used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc.
+<br>
+<br>
+<h3>//console.log() method</h3> 
+<br>
+console.log('abc');<br>  
+console.log(1); <br>
+console.log(true); <br>
+console.log(null); <br>
+console.log(undefined);<br>  
+console.log([1, 2, 3, 4]); // array inside log<br> 
+console.log({a:1, b:2, c:3}); // object inside log <br>
+
+<br><hr>
+
+<h3><u>console.error()</u></h3>
+&nbsp&nbsp&nbsp&nbsp&nbspUsed to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color.
+<br>
+<br>
+<h3>// console.error() method</h3>
+<br>  
+console.error('This is a simple error');<br>  
+
+<br><hr>
+
+<h3><u>console.warn()</u></h3>
+&nbsp&nbsp&nbsp&nbsp&nbspUsed to log warning message to the console. By default the warning message will be highlighted with yellow color.
+<br>
+<br>
+<h3>// console.warn() method</h3>
+    <br>  
+console.warn('This is a warning.');<br>  
+
+<br><hr>
+
+<h3><u>console.clear()</u></h3>
+&nbsp&nbsp&nbsp&nbsp&nbspUsed to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will be printed like : ‘Console was cleared’ while in firefox no message is returned.
+<br>
+<br>
+<h3>// console.clear() method</h3>
+    <br>  
+console.clear();<br>  
+
+<br><hr>
+
+<h3><u>console.time() and console.timeEnd()</u></h3>
+&nbsp&nbsp&nbsp&nbsp&nbspWhenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods provided by the javascript console object. <br>They take a label which must be same, and the code inside can be anything( function, object, simple console).
+<br>
+<br>
+<h3>// console.time() and console.timeEnd() method</h3>
+     <br> 
+console.time('abc'); <br>
+ let fun =  function(){ <br>
+     console.log('fun is running');<br> 
+ } <br>
+ let fun2 = function(){ <br>
+     console.log('fun2 is running..');<br> 
+ } <br>
+ fun(); // calling fun();<br> 
+ fun2(); // calling fun2();<br> 
+console.timeEnd('abc');<br> 
+<br>In the above code sample, we can see that the label is ‘abc’ which is same for both the time() and the timeEnd() method. If we increase the amount of code inside the block defined by these methods, then the time will increase. It is also worth remembering that the time returned to the console will be in milliseconds and might be different each time we refresh the page.
+
+<br><hr>
+
+<h3><u>console.table()</u></h3>
+&nbsp&nbsp&nbsp&nbsp&nbspThis method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.
+<br>
+<br>
+<h3>// console.table() method</h3>
+    <br> 
+console.table({'a':1, 'b':2});<br> 
+
+<br><hr>
+
+<h3><u>console.count()</u></h3>
+&nbsp&nbsp&nbsp&nbsp&nbspThis method is used to count the number that the function hit by this counting method.
+<br>
+<br>
+<h3>// console.count() method</h3>
+ <br>
+for(let i=0;i<5;i++) {       <br>
+    console.count(i); <br>
+} 
+
+<br><hr>
+
+<h3><u>console.group() and console.groupEnd()</u></h3>
+&nbsp&nbsp&nbsp&nbsp&nbspgroup() and groupEnd() methods of the console object allows us to group contents in a separate block, which will be indented. Just like the time() and the timeEnd() they also accepts label, again of same value.
+<br>
+<br>
+<h3>// console.group() and console.groupEnd() method</h3>
+<br> 
+console.group('simple'); <br>
+  console.warn('warning!'); <br>
+  console.error('error here'); <br>
+  console.log('vivi vini vici'); <br>
+console.groupEnd('simple'); <br>
+console.log('new section'); <br>
+<br><hr>
+<center>x-----The End-----x</center>    
+</body>
+</html>

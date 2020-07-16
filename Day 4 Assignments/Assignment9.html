@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <h3><u>ASSIGNMENT 9:</u></h3>
+</head>
+<body>
+    <h3><b><u>Question:</u></b></h3>
+    <p>Ask the user if he is 21+ and log the value "Can drink", "Cannot Drink"</p>
+<h3><b><u>Answer:</u></b></h3>
+
+<P>What to konw right age to consume Alcohol?</P>
+<input type="radio" onclick="yes()"> YES
+   <label id="no"> <input type="radio" onclick="no()"> NO </label>
+<p id="a" style="display: none;"><b>liquor drinking is injurious to health.</b></p>
+
+<label id="show" style="display: none;">
+
+    <p>What is your age?</p>
+        <input type="number" id="age" placeholder="Enter your Age">
+            <button onclick="ok()">Submit</button>
+</label>
+<p id="show1"></p>
+<script>
+   
+    function yes()
+    {
+        
+            alert("liquor drinking is injurious to health, Are you sure want to Proceed")
+            document.getElementById("show").style.display="block";
+            document.getElementById("no").style.display="none";
+            document.getElementById("a").style.display="block";
+        
+        
+    }
+    
+    function no(){
+        
+            alert("You Have Taken the Right Decision, Have a Nice Day");
+            document.getElementById("show1").innerHTML="Answerd the Question";
+        
+    }
+
+    function ok(){
+    //     var i=0;
+    //     var j=24;
+           
+    //     if(i<=j){ 
+    //         alert("You Can't Drink");
+    //     }else{
+    //         alert("You can Drink");
+    //     }
+    document.getElementById("age");
+        var i=1;
+        var j=24;
+        var age= i<j;
+        var age1=i>j;
+        if(age){ 
+            
+            alert("You Can't Drink");
+        }
+        
+        if(age1){
+            alert("You can Drink");
+        }
+    }
+
+</script>
+
+
+</body>
+</html>
